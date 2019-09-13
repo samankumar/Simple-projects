@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "t-shirt",
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "name": "trousher",
+      "color": "yellow"
+    },
+    {
+      "id": 3,
+      "name": "hat",
+      "color": "blow"
+    },
+    {
+      "id": 4,
+      "name": "aman",
+      "color": "red"
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "aman kumar singh",
+      "color": "red"
+    }
+  ]
+}

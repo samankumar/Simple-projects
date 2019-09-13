@@ -1,0 +1,16 @@
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, a.</p>
+<h1>Products Details</h1>
+<a routerLink='/crud'><h5>Add Products</h5></a>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>        
+        <th>Color</th>
+    </tr>
+    <tr *ngFor='let product of products'>
+        <th>{{product.id}}</th>
+        <th>{{product.name}}</th>
+        <th>{{product.color}}</th>
+    </tr>
+</table>
+

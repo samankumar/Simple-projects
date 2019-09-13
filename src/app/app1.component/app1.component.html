@@ -1,0 +1,57 @@
+<router-outlet></router-outlet>
+<br><br>
+<div class="container">
+    <form>
+<div class="form-group"autocomplete="off" >
+    <label>Upload Image</label><input type="image" [(ngModel)]='load' name='load'><br>
+        <label>Sl.No:</label><input type='checkbox'value='Male' 
+        class='form-control' [(ngModel)]='sno'name='sno' disabled>Male
+        <input type='checkbox'  value='FeMale' 
+        class='form-control' [(ngModel)]='sno1'name='sno'>FeMale
+   <label>First Name:</label><input type='text' class='form-control' [(ngModel)]='fstname'name='fstname'>
+   <input type='submit' (click)="f1()"> <input type='reset'>
+   <button (click)='f5()'>Click Me</button>
+</div>
+</form>
+</div>
+<div class="table">
+    <div class="row">
+        <div class="col-md-2">
+           Image: <img [attr.src]=load>
+        </div>
+            <div class="col-md-2">
+                    Sl.No
+                </div>
+        <div class="col-md-2">
+            FIRSTNAME
+        </div>
+    </div>
+    <div class="row" id='a' *ngFor='let data of array;let i=index'>
+            <div class="col-md-2">
+                {{data.Sl}}
+            </div>
+        <div class="col-md-2">
+            {{data.firstName}}
+        </div>
+        <div class="col-md-2" (click)='f4(i)' id='a'>
+                Edit{{i+1}}
+             </div>
+        <div class="col-md-2" (click)='f2(i)' id='a'>
+            Update{{i+1}}
+         </div>
+         <div class="col-md-2" (click)='f3(i)' id='a'>
+            Delete{{i+1}}
+         </div>
+    </div>
+</div>
+<form>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+      </form>

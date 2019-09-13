@@ -1,0 +1,10 @@
+.container{
+    width:400px;
+    background-color: gainsboro;
+}
+#a{
+    height:100px;
+}
+.col-md-3{
+ cursor:pointer;
+}
